@@ -1,0 +1,45 @@
+Traceback (most recent call last):
+  File "screener.py", line 50, in <module>
+    schedule.run_pending()
+  File "/opt/anaconda3/lib/python3.7/site-packages/schedule/__init__.py", line 780, in run_pending
+    default_scheduler.run_pending()
+  File "/opt/anaconda3/lib/python3.7/site-packages/schedule/__init__.py", line 100, in run_pending
+    self._run_job(job)
+  File "/opt/anaconda3/lib/python3.7/site-packages/schedule/__init__.py", line 172, in _run_job
+    ret = job.run()
+  File "/opt/anaconda3/lib/python3.7/site-packages/schedule/__init__.py", line 661, in run
+    ret = self.job_func()
+  File "screener.py", line 35, in screener
+    driver.maximize_window()
+  File "/opt/anaconda3/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 737, in maximize_window
+    self.execute(command, params)
+  File "/opt/anaconda3/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/opt/anaconda3/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=93.0.4577.82)
+
+Traceback (most recent call last):
+  File "screener.py", line 50, in <module>
+    schedule.run_pending()
+  File "/opt/anaconda3/lib/python3.7/site-packages/schedule/__init__.py", line 780, in run_pending
+    default_scheduler.run_pending()
+  File "/opt/anaconda3/lib/python3.7/site-packages/schedule/__init__.py", line 100, in run_pending
+    self._run_job(job)
+  File "/opt/anaconda3/lib/python3.7/site-packages/schedule/__init__.py", line 172, in _run_job
+    ret = job.run()
+  File "/opt/anaconda3/lib/python3.7/site-packages/schedule/__init__.py", line 661, in run
+    ret = self.job_func()
+  File "screener.py", line 34, in screener
+    driver.get('https://nyu.qualtrics.com/jfe/form/SV_ePNv0eXvGWgCxkq')
+  File "/opt/anaconda3/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/opt/anaconda3/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/opt/anaconda3/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=93.0.4577.82)
+
